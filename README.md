@@ -529,7 +529,7 @@ A rule for interacting with Kubernetes objects.
     # when this target is bazel run.  The digest of the published
     # image is substituted as a part of the resolution process.
     substitutions = {
-      "%{expand_template_variable}": "$(make_expanded_variable}",
+      "%{expand_template_variable}": "$(make_expanded_variable)",
     })
   </pre></p>
         <p>Which is then invoked with <code>bazel run --define make_expanded_variable=value :target</code>
